@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pedigree_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_pedigree_title">
+
+<!-- FIRST GEN -->
+
+        <FrameLayout
+            android:id="@+id/Is"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toBottomOf="@+id/Isd"
+            app:layout_constraintEnd_toStartOf="@+id/firstThirdVertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Iss" />
+
+        <FrameLayout
+            android:id="@+id/Id"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toBottomOf="@+id/Idd"
+            app:layout_constraintEnd_toStartOf="@+id/firstThirdVertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Ids" />
+
+        <TextView
+            android:id="@+id/s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="s"
+            app:layout_constraintEnd_toEndOf="@+id/Is"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/Is"
+            app:layout_constraintTop_toBottomOf="@+id/Is" />
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="d"
+            app:layout_constraintEnd_toEndOf="@+id/Id"
+            app:layout_constraintStart_toStartOf="@+id/Id"
+            app:layout_constraintTop_toBottomOf="@+id/Id" />
+
+<!-- SECOND GEN -->
+
+        <FrameLayout
+            android:id="@+id/Iss"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/ssd"
+            app:layout_constraintEnd_toStartOf="@+id/secondThirdVertical"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="@+id/firstThirdVertical"
+            app:layout_constraintTop_toTopOf="@+id/Isss" />
+
+        <FrameLayout
+            android:id="@+id/Isd"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            android:layout_marginTop="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Isdd"
+            app:layout_constraintEnd_toStartOf="@+id/secondThirdVertical"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/firstThirdVertical"
+            app:layout_constraintTop_toTopOf="@+id/Isds" />
+
+        <FrameLayout
+            android:id="@+id/Ids"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toBottomOf="@+id/Idsd"
+            app:layout_constraintEnd_toStartOf="@+id/secondThirdVertical"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/firstThirdVertical"
+            app:layout_constraintTop_toTopOf="@+id/Idss" />
+
+        <FrameLayout
+            android:id="@+id/Idd"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toBottomOf="@+id/Iddd"
+            app:layout_constraintEnd_toStartOf="@+id/secondThirdVertical"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/firstThirdVertical"
+            app:layout_constraintTop_toTopOf="@+id/Idds" />
+
+        <TextView
+            android:id="@+id/ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="ss"
+            app:layout_constraintEnd_toEndOf="@+id/Iss"
+            app:layout_constraintStart_toStartOf="@+id/Iss"
+            app:layout_constraintTop_toBottomOf="@+id/Iss" />
+
+
+        <TextView
+            android:id="@+id/sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="sd"
+            app:layout_constraintEnd_toEndOf="@+id/Isd"
+            app:layout_constraintStart_toStartOf="@+id/Isd"
+            app:layout_constraintTop_toBottomOf="@+id/Isd" />
+
+
+        <TextView
+            android:id="@+id/ds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ds"
+            app:layout_constraintEnd_toEndOf="@+id/Ids"
+            app:layout_constraintStart_toStartOf="@+id/Ids"
+            app:layout_constraintTop_toBottomOf="@+id/Ids" />
+
+
+        <TextView
+            android:id="@+id/dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="dd"
+            app:layout_constraintEnd_toEndOf="@+id/Idd"
+            app:layout_constraintStart_toStartOf="@+id/Idd"
+            app:layout_constraintTop_toBottomOf="@+id/Idd" />
+
+<!-- THIRD GEN -->
+
+        <FrameLayout
+            android:id="@+id/Isss"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Issd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/secondThirdVertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/Isds"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Isdd"
+            app:layout_constraintEnd_toEndOf="@+id/Isdd"
+            app:layout_constraintStart_toStartOf="@+id/Isdd"
+            app:layout_constraintTop_toBottomOf="@+id/Issd" />
+
+        <FrameLayout
+            android:id="@+id/Isdd"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Idss"
+            app:layout_constraintEnd_toEndOf="@+id/Idss"
+            app:layout_constraintStart_toStartOf="@+id/Idss"
+            app:layout_constraintTop_toBottomOf="@+id/Isds" />
+
+        <FrameLayout
+            android:id="@+id/Issd"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Isds"
+            app:layout_constraintEnd_toEndOf="@+id/Isds"
+            app:layout_constraintStart_toStartOf="@+id/Isds"
+            app:layout_constraintTop_toBottomOf="@+id/Isss" />
+
+        <FrameLayout
+            android:id="@+id/Idss"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Idsd"
+            app:layout_constraintEnd_toEndOf="@+id/Idsd"
+            app:layout_constraintStart_toStartOf="@+id/Idsd"
+            app:layout_constraintTop_toBottomOf="@+id/Isdd" />
+
+        <FrameLayout
+            android:id="@+id/Idsd"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Idds"
+            app:layout_constraintEnd_toEndOf="@+id/Idds"
+            app:layout_constraintStart_toStartOf="@+id/Idds"
+            app:layout_constraintTop_toBottomOf="@+id/Idss" />
+
+        <FrameLayout
+            android:id="@+id/Idds"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toTopOf="@+id/Iddd"
+            app:layout_constraintEnd_toEndOf="@+id/Iddd"
+            app:layout_constraintStart_toStartOf="@+id/Iddd"
+            app:layout_constraintTop_toBottomOf="@+id/Idsd" />
+
+        <FrameLayout
+            android:id="@+id/Iddd"
+            android:layout_width="@dimen/pedigree_image_width"
+            android:layout_height="@dimen/pedigree_image_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/secondThirdVertical"
+            app:layout_constraintTop_toBottomOf="@+id/Idds" />
+
+        <TextView
+            android:id="@+id/sdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="sdd"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Isdd"
+            app:layout_constraintStart_toStartOf="@+id/Isdd"
+            app:layout_constraintTop_toBottomOf="@+id/Isdd" />
+
+        <TextView
+            android:id="@+id/sss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="sss"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Isss"
+            app:layout_constraintStart_toStartOf="@+id/Isss"
+            app:layout_constraintTop_toBottomOf="@+id/Isss" />
+
+        <TextView
+            android:id="@+id/ssd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="ssd"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Issd"
+            app:layout_constraintStart_toStartOf="@+id/Issd"
+            app:layout_constraintTop_toBottomOf="@+id/Issd" />
+
+        <TextView
+            android:id="@+id/sds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="sds"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Isds"
+            app:layout_constraintStart_toStartOf="@+id/Isds"
+            app:layout_constraintTop_toBottomOf="@+id/Isds" />
+
+        <TextView
+            android:id="@+id/ddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="ddd"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Iddd"
+            app:layout_constraintStart_toStartOf="@+id/Iddd"
+            app:layout_constraintTop_toBottomOf="@+id/Iddd" />
+
+        <TextView
+            android:id="@+id/dds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="sds"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Idds"
+            app:layout_constraintStart_toStartOf="@+id/Idds"
+            app:layout_constraintTop_toBottomOf="@+id/Idds" />
+
+        <TextView
+            android:id="@+id/dss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="dss"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Idss"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="@+id/Idss"
+            app:layout_constraintTop_toBottomOf="@+id/Idss" />
+
+        <TextView
+            android:id="@+id/dsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            tools:text="dsd"
+            android:textSize="@dimen/gen3"
+            app:layout_constraintEnd_toEndOf="@+id/Idsd"
+            app:layout_constraintStart_toStartOf="@+id/Idsd"
+            app:layout_constraintTop_toBottomOf="@+id/Idsd" />
+
+<!-- GUIDES -->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/firstThirdVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/secondThirdVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="89dp"
+            app:layout_constraintGuide_percent=".66" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

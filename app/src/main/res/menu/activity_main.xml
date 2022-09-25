@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_new_horse"
+        android:icon="@drawable/ic_menu_add"
+        android:title="New Horse"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menu_advance_year"
+        android:icon="@android:drawable/ic_media_next"
+        android:title="Next Year"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/menu_reset"
+        android:title="Reset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_toggle_image_size"
+        android:title="Toggle image size" />
+
+</menu>

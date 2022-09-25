@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detail_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/detail_frame"
+            android:layout_width="@dimen/detail_image_width"
+            android:layout_height="@dimen/detail_image_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_frame"
+            tools:text="Black Beauty" />
+
+        <EditText
+            android:id="@+id/detail_edit_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionGo"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_frame" />
+
+        <TextView
+            android:id="@+id/detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_name"
+            tools:text="Owner: You\nSex: Gelding\nAge: 6 years old\nNotes: Purchased from a street sale.  Pedigreed carriage horse." />
+
+        <Button
+            android:id="@+id/button_pedigree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Pedigree"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/button_progeny"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text" />
+
+        <Button
+            android:id="@+id/button_progeny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Progeny"
+            app:layout_constraintBottom_toBottomOf="@+id/button_pedigree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_pedigree"
+            app:layout_constraintTop_toTopOf="@+id/button_pedigree" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
